@@ -180,6 +180,7 @@ header * {
     .menu-bar1, .menu-bar2, .menu-bar3 {
         width: 35px;
         height: 5px;
+        border-radius: 5px;
         background-color: #fff;
         margin: 6px 0;
         transition: 0.4s;
@@ -198,10 +199,58 @@ header * {
         -webkit-transform: rotate(45deg) translate(-8px, -8px);
         transform: rotate(45deg) translate(-8px, -8px);
     }
-    /*______MENU BAR_____*/
-    .header__nav{
+
+    .header__nav {
+        padding-right: 0px;
+        margin-top: 10px;
+        transition: 0.3s ease;
         display: none;
     }
+
+    .change-nav{
+        display: block;
+    }
+
+    .header__nav ul {
+        display: block;
+        width: 100px;
+        padding: 7px;
+    }
+
+    .header__nav-item {
+        width: 100px;
+        margin: 0px;
+        padding: 15px;
+    }
+
+    .header__nav button {
+        display: none;
+    }
+
+    .header__menu, .header__nav{
+        z-index: 2;
+    }
+
+    .header__nav-bg{
+        top:0;
+        left: 0;
+        position: absolute;
+        width: 0;
+        height: 0;
+        background: radial-gradient(circle,#ed241eb7, #EE4D47);
+        border-radius: 50%;
+        transition: 0.3s ease;
+    }
+
+    .change-nav-bg{
+        display: block;
+        width: 400px;
+        height: 400px;
+        transform: translate(-50%,-30%);
+    }
+
+    /*______MENU BAR_____*/
+
     .header__slogan-container {
         width: 100%;
         margin: 0px;

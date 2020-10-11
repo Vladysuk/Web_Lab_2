@@ -12,7 +12,7 @@ body {
 }
 
 .link:hover {
-    text-decoration: underline #FFF;
+    text-decoration: none #FFF;
 }
 
 .section-title {
